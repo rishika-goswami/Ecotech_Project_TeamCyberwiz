@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Climate Analysis</title>
+        <link rel="stylesheet" href="BranchStyles.css">        
+        <h1 align="center">
+            Air Pressure
+        </h1>
+        <script src="pres.js"></script>    
+    </head>
+
+    <body>
+        <br>                
+        <p align="center" style="font-size: 15px; color: rgb(90, 4, 90);" >
+            You can choose number of cities for which you want to compare air pressures. A bar graph is displayed if you have 
+            chosen to see air pressure data for more than 1 city.
+        </p> 
+        <br><br>
+        <label for="lab" style="font-size: 30px; margin-left: 100px;">                
+            Choose the number of comparisons you want to perform:                
+        </label>
+        <input type="number" id="comp" name="comp" style="height: 25px; width: 200px; font-size: 20px;" value="" min="1" max="10">
+        <br><br><br>
+        <div class="bar" id="submit">
+            <a href="#" onclick="addFields()">Submit</a> 
+        </div>                  
+        <br><br>
+        <div id="container">
+        </div>
+        <br><br>
+        <div class="bar" id="compare" style="visibility: hidden;">
+            <a href="#" onclick="compare()">Compare</a> 
+        </div>               
+    </body>
+</html>
